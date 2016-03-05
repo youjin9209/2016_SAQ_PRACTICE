@@ -12,7 +12,7 @@
 int main() {
     // insert code here...
     int integerArray[10] = {0};
-    char scoreArray[10] = {0};
+    char scoreArray[10][3] = {"F", "D", "D+", "C", "C+", "B", "B+", "A", "A+", "A+"};
     
     int min = 0;
     int i = 0, j = 0, nTmp = 0;
@@ -50,9 +50,13 @@ int main() {
             if(integerArray[j] < integerArray[min])
                 min = j;
         }
-        nTmp = integerArray[min];
-        integerArray[min] = integerArray[i];
-        integerArray[i] = nTmp;
+        
+        if(min != i)
+        {
+            nTmp = integerArray[min];
+            integerArray[min] = integerArray[i];
+            integerArray[i] = nTmp;
+        }
     }
     
     for(int w = 0; w < 10; w++)
@@ -60,9 +64,14 @@ int main() {
         printf("%d ", integerArray[w]);
     }
     
-    for(int p = 0; p < 10; p++)
+    printf("\n");
+    for(int g = 0; g < 10; g++)
     {
-    
+        printf("%-2s ", scoreArray[g]);
     }
+    
+    printf("\n");
+    printf("%s", scoreArray[7]);
+    printf("\n");
     return 0;
 }
