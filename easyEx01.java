@@ -6,7 +6,7 @@ import java.util.Arrays;
 이러한 상황에서도 동일하게 java Solution 명령으로 프로그램을 수행해 볼 수 있습니다. */
 import java.util.Scanner;
 import java.io.FileInputStream;
-
+//시험공부
 class easyEx01 {
 	public static void main(String args[]) throws Exception	{
 		/* 아래 메소드 호출은 앞으로 표준입력(키보드) 대신 input.txt 파일로 부터 읽어오겠다는 의미의 코드입니다.
