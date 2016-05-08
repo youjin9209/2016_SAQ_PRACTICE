@@ -1,5 +1,5 @@
 package codeGround;
-
+//숫자골라내기-XOR연산 : 같은수는 0 처리 해버리니까 ㅇㅋ
 import java.util.Arrays;
 import java.util.Scanner;
 import java.io.FileInputStream;
