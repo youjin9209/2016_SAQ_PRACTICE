@@ -3,7 +3,7 @@ package codeGround;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.io.FileInputStream;
-
+//다트게임
 class easyEx04 {
 	
 	public static void main(String args[]) throws Exception	{
@@ -37,9 +37,9 @@ class easyEx04 {
 				int x = sc.nextInt();
 				int y = sc.nextInt();
 				double radius = Math.sqrt(Math.pow(x,2) + Math.pow (y,2)) ;
-		        double theta = Math.atan2(y, x); //x축과 이루는 각
-		        double angle = ((theta) * 180 / Math.PI + 360) % 360; //각도 
-		        int index = (int)(angle + 9)/18; //다트스코어 배열 인덱스 		        
+		        	double theta = Math.atan2(y, x); //x축과 이루는 각
+		        	double angle = ((theta) * 180 / Math.PI + 360) % 360; //각도 
+		        	int index = (int)(angle + 9)/18; //다트스코어 배열 인덱스 		        
 		       
 				if (1 <= radius && radius < BullRadius)
 					totalscore += 50;
@@ -52,7 +52,7 @@ class easyEx04 {
 				else
 					totalscore += 0;
 			}
-            // 이 부분에서 정답을 출력하십시오.
+            		// 이 부분에서 정답을 출력하십시오.
 			System.out.println("Case #" + test_case);
 			System.out.println(totalscore);
 		}
