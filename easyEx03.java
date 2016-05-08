@@ -19,7 +19,7 @@ class easyEx03 {
 		
 		int TC;
 		int test_case;
-		// result ^= num;
+		
 		TC = sc.nextInt();    
 		for(test_case = 1; test_case <= TC; test_case++) {
 			// 이 부분에서 알고리즘 프로그램을 작성하십시오.
@@ -30,9 +30,9 @@ class easyEx03 {
 				number[i] = sc.nextInt();
 				XOR ^= number[i];
 			}
-            	// 이 부분에서 정답을 출력하십시오.
-		System.out.println("Case #" + test_case);
-            	System.out.println(XOR);
+            		// 이 부분에서 정답을 출력하십시오.
+			System.out.println("Case #" + test_case);
+            		System.out.println(XOR);
 		}
 	}
 }
